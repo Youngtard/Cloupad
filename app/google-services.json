@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1098553285117",
+    "firebase_url": "https://cloupad-a2d1d.firebaseio.com",
+    "project_id": "cloupad-a2d1d",
+    "storage_bucket": "cloupad-a2d1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098553285117:android:c73ff4e434b41d49",
+        "android_client_info": {
+          "package_name": "com.youngtard.cloupad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098553285117-9klmb4su5ej7mn5167ebq2dus2pd1gha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.youngtard.cloupad",
+            "certificate_hash": "73fa8c9293bb02b5ded9e1e002c065c40c52dbdd"
+          }
+        },
+        {
+          "client_id": "1098553285117-k3vs4k7ejmmm33fflfipu13m0d3c5mag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiHEiNaFuoJytd7n8qeMXrrpta_t4e1MI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098553285117-k3vs4k7ejmmm33fflfipu13m0d3c5mag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

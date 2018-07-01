@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fl"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditClouActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Title"
+                android:fontFamily="@font/markazitext_regular"
+                android:textColor="@color/toolBarPrimaryText"
+                android:textSize="32sp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/et_title_entered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="text"
+            android:hint="Title"
+            android:textStyle="bold"
+            android:maxLength="32"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_content_entered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What are you thinking?"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:fontFamily="@font/montserrat_regular"
+
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save_clou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_check"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+
+        />
+
+</FrameLayout>

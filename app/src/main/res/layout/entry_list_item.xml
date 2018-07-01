@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="128dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_clou_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Techpoint Build"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_clou_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Blockchain is not the future, it is now."
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21/6/2018"
+        android:layout_gravity="end"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="4dp"
+
+        />
+
+</LinearLayout>

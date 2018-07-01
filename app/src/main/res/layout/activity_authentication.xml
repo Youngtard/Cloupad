@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthenticationActivity"
+    android:orientation="vertical"
+    android:background="@color/skyblue"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome..."
+            android:textColor="@color/toolBarPrimaryText"
+            android:textSize="32sp"
+            android:fontFamily="@font/markazitext_regular"
+
+
+            />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test app"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="136dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloupad"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:textSize="64sp"
+        android:fontFamily="@font/markazitext_regular"
+        android:padding="0dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where thoughts meet the clouds"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/black"
+        />
+
+
+        <Button
+            android:id="@+id/btn_sign_up_with_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up with Google"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@color/toolBarPrimaryText"
+            android:layout_gravity="center"
+            android:layout_marginTop="192dp"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:drawableStart="@drawable/ic_btn_google_light_normal_ios"
+            />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="or"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:fontFamily="@font/montserrat_regular"-->
+            <!--android:layout_margin="2dp"-->
+            <!--/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have a Cloupad account?"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginBottom="2dp"
+            />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In with Google"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:drawableStart="@drawable/ic_btn_google_light_normal_ios"
+
+            />
+
+
+
+
+
+</LinearLayout>
