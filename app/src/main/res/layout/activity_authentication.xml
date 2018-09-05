@@ -9,36 +9,37 @@
     android:background="@color/skyblue"
     >
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/colorPrimary"-->
 
-        >
+        <!--&gt;-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome..."
-            android:textColor="@color/toolBarPrimaryText"
-            android:textSize="32sp"
-            android:fontFamily="@font/markazitext_regular"
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Welcome..."-->
+            <!--android:textColor="@color/toolBarPrimaryText"-->
+            <!--android:textSize="32sp"-->
+            <!--android:fontFamily="@font/markazitext_regular"-->
 
 
-            />
+            <!--/>-->
 
-        <Button
-            android:id="@+id/btn_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="test app"
-            android:background="@color/colorAccent"
-            android:layout_marginLeft="136dp"
-            />
+    <!--<Button-->
+    <!--android:id="@+id/btn_test"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="test app"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:layout_marginLeft="136dp"-->
+    <!--/>-->
 
-    </android.support.v7.widget.Toolbar>
+    <!--</android.support.v7.widget.Toolbar>-->
 
     <TextView
+        android:id="@+id/tv_test_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cloupad"
@@ -74,6 +75,7 @@
             android:textAllCaps="false"
             android:fontFamily="@font/montserrat_regular"
             android:drawableStart="@drawable/ic_btn_google_light_normal_ios"
+            android:textColor="@color/black"
             />
 
         <!--<TextView-->
@@ -89,6 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have a Cloupad account?"
+            android:textColor="@color/black"
             android:textSize="12sp"
             android:layout_gravity="center"
             android:fontFamily="@font/montserrat_regular"
@@ -107,7 +110,7 @@
             android:textAllCaps="false"
             android:fontFamily="@font/montserrat_regular"
             android:drawableStart="@drawable/ic_btn_google_light_normal_ios"
-
+            android:textColor="@color/toolBarPrimaryText"
             />
 
 

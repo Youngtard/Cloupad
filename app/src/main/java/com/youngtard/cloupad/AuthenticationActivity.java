@@ -5,12 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthenticationActivity extends AppCompatActivity {
     Button signUp;
-    Button testApp;
+    TextView testApp;
 
 
     @Override
@@ -18,8 +19,9 @@ public class AuthenticationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentication);
 
+        getSupportActionBar().setTitle("Welcome...");
 
-        testApp = findViewById(R.id.btn_test);
+        testApp = findViewById(R.id.tv_test_app);
 //        signUp = findViewById(R.id.btn_sign_up_with_google);
 //
 //        signUp.setOnClickListener(new View.OnClickListener() {

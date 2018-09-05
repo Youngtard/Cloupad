@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="128dp"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
 
     <TextView
         android:id="@+id/tv_clou_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Techpoint Build"
-        android:layout_marginTop="4dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Techpoint Build" />
 
-        />
-
+    <!--I set weight attribute in order to allow textview widget have highest preference in terms of occupying space-->
     <TextView
         android:id="@+id/tv_clou_content"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
         android:layout_weight="1"
-        android:text="Blockchain is not the future, it is now."
-        android:layout_marginTop="2dp"
-        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        tools:text="Blockchain is not the future, it is now. Get started as soon as possible or else you may carry last. Do you want to>"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="21/6/2018"
         android:layout_gravity="end"
-        android:layout_marginTop="2dp"
-        android:layout_marginRight="4dp"
-
+        android:text="21/6/2018"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_margin="1dp"
         />
 
 </LinearLayout>

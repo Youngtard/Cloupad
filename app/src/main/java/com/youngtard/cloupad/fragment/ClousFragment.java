@@ -1,11 +1,13 @@
 package com.youngtard.cloupad.fragment;
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,7 +17,8 @@ import android.view.ViewGroup;
 import com.youngtard.cloupad.EditClouActivity;
 import com.youngtard.cloupad.R;
 import com.youngtard.cloupad.adapter.ClousRecyclerAdapter;
-import com.youngtard.cloupad.model.Clou;
+import com.youngtard.cloupad.room.Clou;
+import com.youngtard.cloupad.room.ClouDatabase;
 
 import java.util.ArrayList;
 
@@ -28,6 +31,8 @@ public class ClousFragment extends Fragment {
     private ClousRecyclerAdapter clousRecyclerAdapter;
     private RecyclerView clousRecyclerView;
     private ArrayList<Clou> clous;
+
+    private ClouDatabase clouDatabase;
 
     public ClousFragment() {
         // Required empty public constructor
@@ -47,8 +52,15 @@ public class ClousFragment extends Fragment {
         clousRecyclerAdapter = new ClousRecyclerAdapter(clous, getActivity());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
 
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(clousRecyclerView.getContext(), layoutManager.getOrientation());
+        clousRecyclerView.addItemDecoration((dividerItemDecoration));
+
         clousRecyclerView.setAdapter(clousRecyclerAdapter);
         clousRecyclerView.setLayoutManager(layoutManager);
+
+        clouDatabase = ClouDatabase.getInstance(getActivity().getApplicationContext());
+
+
 
         //HOW CAN I PERSIST PRIMITIVE DATASTRUCTURES BETWEEN ACTIVITIES
         //USE DATABASE SERVICE - SQLITE, ROOM
@@ -84,5 +96,18 @@ public class ClousFragment extends Fragment {
 
 
     }
+
+//    @Override
+//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//
+//    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        clousRecyclerAdapter.setClous(clouDatabase.clouDao().loadAllClous());
+    }
+
 
 }

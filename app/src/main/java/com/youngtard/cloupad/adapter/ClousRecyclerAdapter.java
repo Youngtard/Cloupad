@@ -9,13 +9,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.youngtard.cloupad.R;
-import com.youngtard.cloupad.model.Clou;
+import com.youngtard.cloupad.room.Clou;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class ClousRecyclerAdapter extends RecyclerView.Adapter<ClousRecyclerAdapter.ClousViewHolder> {
-    private ArrayList<Clou> clous;
+    private List<Clou> clous;
     private Context context;
 
 
@@ -43,6 +44,14 @@ public class ClousRecyclerAdapter extends RecyclerView.Adapter<ClousRecyclerAdap
         return clous.size();
     }
 
+
+    //Sets clous to recycler list view
+    public void setClous(List<Clou> clous) {
+//        clous.clear();
+        this.clous = clous;
+        notifyDataSetChanged();
+    }
+
     class ClousViewHolder extends RecyclerView.ViewHolder {
         TextView clouTitle;
         TextView clouContent;
@@ -57,6 +66,8 @@ public class ClousRecyclerAdapter extends RecyclerView.Adapter<ClousRecyclerAdap
         }
 
         void bind(Clou clou){
+//            clouTitle.setText(clou.getClouTitle());
+//            clouContent.setText(clou.getClouContent());
             clouTitle.setText(clou.getClouTitle());
             clouContent.setText(clou.getClouContent());
         }

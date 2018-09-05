@@ -16,17 +16,16 @@ public class TimelineActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
-//    private FirebaseAuth mAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
 
-        toolbar = findViewById(R.id.tb_tool_bar);
+        getSupportActionBar().setTitle("Timeline");
+
+//        toolbar = findViewById(R.id.tb_tool_bar);
 //        setSupportActionBar(toolbar);
         tabLayout = findViewById(R.id.tl_tab_layout);
-//        mAuth = FirebaseAuth.getInstance();
         viewPager = findViewById(R.id.vp_view_pager);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
@@ -35,5 +34,8 @@ public class TimelineActivity extends AppCompatActivity {
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
+
+
+
     }
 }

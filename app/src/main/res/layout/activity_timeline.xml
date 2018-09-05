@@ -1,58 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context=".TimelineActivity">-->
 
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/tb_tool_bar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        app:titleTextColor="@color/toolBarPrimaryText"
-        android:theme="@style/AppTheme"
-        >
-
-
-    </android.support.v7.widget.Toolbar>
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tl_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        app:tabMode="fixed"
         app:tabGravity="fill"
-        app:tabTextColor="@color/toolBarPrimaryText"
         app:tabIndicatorColor="@color/colorAccent"
+        app:tabMode="fixed"
         app:tabSelectedTextColor="@color/toolBarPrimaryText"
-
-
+        app:tabTextColor="@color/toolBarPrimaryText"
 
 
         >
 
         <!--<android.support.design.widget.TabItem-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="Clous"-->
-            <!--app:tabGravity="fill"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Clous"-->
+        <!--app:tabGravity="fill"-->
 
-            <!--/>-->
+        <!--/>-->
 
         <!--<android.support.design.widget.TabItem-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="Reminders" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Reminders" />-->
 
     </android.support.design.widget.TabLayout>
 
@@ -65,14 +46,12 @@
         android:gravity="center"
         android:padding="2dp"
         android:text="No Entries"
-
-        />
+        android:textColor="@color/black" />
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_view_pager"
@@ -83,25 +62,10 @@
 
         </android.support.v4.view.ViewPager>
 
-        <!--<android.support.design.widget.FloatingActionButton-->
-            <!--android:id="@+id/fab_use"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:clickable="true"-->
-            <!--android:focusable="true"-->
-            <!--android:layout_gravity="end|bottom"-->
-            <!--android:src="@drawable/ic_add"-->
-            <!--android:layout_margin="16dp"-->
-            <!--android:elevation="8dp"-->
-
-            <!--/>-->
 
     </FrameLayout>
-
-
 
 
 </LinearLayout>
 
 
-<!--</android.support.constraint.ConstraintLayout>-->

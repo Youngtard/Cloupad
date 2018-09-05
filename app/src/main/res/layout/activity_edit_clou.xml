@@ -15,34 +15,18 @@
         android:orientation="vertical"
         >
 
-        <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No Title"
-                android:fontFamily="@font/markazitext_regular"
-                android:textColor="@color/toolBarPrimaryText"
-                android:textSize="32sp"
-                />
-
-        </android.support.v7.widget.Toolbar>
-
         <EditText
             android:id="@+id/et_title_entered"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:hint="Title"
             android:textStyle="bold"
             android:maxLength="32"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
+            android:textColor="@color/black"
 
             />
 
@@ -51,11 +35,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="What are you thinking?"
-            android:inputType="textMultiLine"
+            android:inputType="textMultiLine|textCapSentences"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:fontFamily="@font/montserrat_regular"
-
+            android:textColor="@color/black"
             />
 
     </LinearLayout>

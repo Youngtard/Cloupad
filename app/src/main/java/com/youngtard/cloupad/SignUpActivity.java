@@ -29,6 +29,8 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        getSupportActionBar().setTitle("Create an Account");
+
         signUp = findViewById(R.id.btn_sign_up);
         emailAddressEntered = findViewById(R.id.et_email_address_entered);
         passwordEntered = findViewById(R.id.et_password_entered);
